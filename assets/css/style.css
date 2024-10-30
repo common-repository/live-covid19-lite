@@ -1,0 +1,124 @@
+.lcvad-row .lcvad-col {
+	padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.lcvad-row {
+    width: 100%;
+}
+@media screen and (min-width: 480px) {
+	.lcvad-row{
+		display: inline-flex;
+	}
+}
+.lcvad-buttons input{
+	width: 100%;
+}
+
+.lcvad-table-wrapper {
+  	overflow: auto;
+	max-width: 100%;
+	margin: 10px;
+	background:
+		linear-gradient(to right, white 30%, rgba(255,255,255,0)),
+		linear-gradient(to right, rgba(255,255,255,0), white 70%) 0 100%,
+		radial-gradient(farthest-side at 0% 50%, rgba(0,0,0,.2), rgba(0,0,0,0)),
+		radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.2), rgba(0,0,0,0)) 0 100%;
+	background-repeat: no-repeat;
+	background-color: white;
+	background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+  background-position: 0 0, 100%, 0 0, 100%;
+	background-attachment: local, local, scroll, scroll;
+	height: 500px;
+}
+table.lcvad-table{
+	width: 100%;
+	margin: 0 0;
+}
+
+.lcvad-table tr {
+  border-bottom: 1px solid;
+}
+
+tr:nth-child(even) {
+    background: #ccc;
+}
+
+.lcvad-table tr img{
+	margin: 0 7px;
+}
+
+.lcvad-table th {
+  position: sticky;
+  top: 0;
+  color: #fff;
+  white-space: nowrap;
+  background: #555;
+}
+
+.lcvad-table th,
+.lcvad-table td {
+  text-align: left;
+  padding: 0.5em 1em;
+}
+
+/* Scroll Bar */
+.lcvad-table-wrapper::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #F5F5F5;
+}
+
+.lcvad-table-wrapper::-webkit-scrollbar-thumb{
+	width: 5px;
+	background-color: #555;
+	border-radius: 5px;
+}
+
+.lcvad-table-wrapper::-webkit-scrollbar{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+
+
+/* Data Table */
+.lcvad-buttons {
+	padding: 10px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.lcvad-right{
+	float: right;
+}
+
+@media screen and (max-width: 480px) {
+	.lcvad-buttons input[type="text"] {
+	    width: 100%;
+	    margin-top: 10px;
+	}
+}
+.lcvad-sorting th{
+	cursor: pointer;
+}
+
+.lcvad-sorting th:before, .lcvad-sorting th:after {
+    border: 4px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    right: 5px;
+    top: 50%;
+    position: absolute;
+    width: 0;
+}
+
+.lcvad-sorting th:after {
+    border-top-color: #fff;
+    margin-top: 1px;
+}
+.lcvad-sorting th:before {
+    border-bottom-color: #fff;
+    margin-top: -9px;
+}
